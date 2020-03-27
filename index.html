@@ -37,8 +37,42 @@
       <h5>&copy;2020 Jonathan Andrews</h5>
     </footer>
 
+
+    <section id="time-form" class="form-popup form-time">      
+      <form class="container">
+        <h2>Time Slot</h2>
+        <h4 class="col-12"><span class="col-4">---</span><span id="slot-name" class="col-4">XXhXX</span><span class="col-4"> ---</span></h4>
+        <hr>
+        <div class="container">
+          <span class="d-flex flex-fill mb-1">
+            <input id="new-event-input" class="new-event-control col-7 form-control mx-1" type="text" placeholder="New Event">
+            <div class="input-group col-4">
+              <input type="number" id="new-event-minutes-input" class="new-event-control form-control" placeholder="Duration" min="15" max="60" step="15">
+                <!-- max=60 is a concession to time. With the planned hour-overflow feature, event durations can be longer. -->
+              <div class="input-group-append">
+                <span class="input-group-text">min.</span>
+              </div>
+            </div>
+            <button id="new-event-button" class="col-1 btn-secondary ml-1">+</button>
+          </span>
+          <input id="new-event-description-input" class="new-event-control col-12 form-control" type="text" placeholder="Description">
+          <hr>
+
+          <div id="time-form-events">
+
+            <!-- Events go here -->          
+
+          </div>
+          
+          <button id="time-form-close" class="btn btn-success btn-lg position-absolute" type="submit" style="bottom: 5%; left:45%;">Close</button>
+        </div>
+      </form>    
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="Assets/logic.js"></script>
   </body>
+
+
 </html>
