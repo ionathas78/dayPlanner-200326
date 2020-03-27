@@ -226,6 +226,9 @@ function storeDay() {
     localStorage.setItem(_LOCALSTORAGE_VARIABLENAME, stringToStore);
 }
 
+//  **  It'd probably be useful to have a verifyLocalStorage function, too, just in case.
+//      That's outside the scope of this project, though, so I'm going to leave it for the future.
+
 //  This sets up HourBlocks for the day from scratch, in case there's nothing in local storage.
 function initDay(targetMoment) {
     for (var i = 0; i < _HOURS_INDAY; i++) {
