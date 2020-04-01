@@ -36,6 +36,8 @@ THEN the saved events persist
 ```
 
 ## Usage
+https://ionathas78.github.io/dayPlanner-200326/
+
 When you pull up the form, you'll see today's schedule laid out in hourly blocks, with the hour 
 printed at the top of the block and your scheduled events spelled out in the bottom half of the 
 block. Blocks in the past are grey; blocks in the present or near future are red; blocks farther
